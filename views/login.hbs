@@ -1,0 +1,147 @@
+
+<link href="/stylesheets/particles.css" rel="stylesheet"  type="text/css">
+    </head>
+
+
+
+
+    <div id="particles-js" >
+        <div id="intro">
+            <h20>Pied Piper</h20>
+            
+    </div>
+    	
+            
+            </div>
+
+
+<script src="/javascripts/particles.js"></script>
+    <script src="/javascripts/particles.min.js"></script>
+    <script src="/javascripts/particlesapp.js"></script>
+
+<div class="col-md-8 col-md-offset-2">
+    <h2>Login</h2>
+    <form class="form-horizontal" role="form" id="log-form">
+     
+        <body background = "/images/silver_bg.jpg">
+
+        <div class="form-group mt">
+            <div class="col-sm-10 col-sm-offset-2">
+            <div class="col-sm-3">
+                <label for="inputUsername" style= "color : black" class="control-label">Username</label>  
+            </div>
+            <div class="col-sm-9">
+                <input type="text" class="form-control input-lg required" id="inputUsername" placeholder="@username">
+            </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+            <div class="col-sm-3">
+                <label for="inputPassword" style= "color : black" class="control-label">Password</label>
+            </div>
+            <div class="col-sm-9">
+                <input type="password" class="form-control input-lg required" id="inputPassword"
+                       placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row col-sm-offset-6 col-sm-2 mt" >
+
+                <button type="submit"  class="btn btn-warning btn-lg" >Sign In</button></div>
+            <div class="g-signin2 row col-sm-3" data-onsuccess="onSignIn" style=" padding-top: 47px  "></div>
+                 
+            
+            
+            
+        </div>
+            <html lang="en">
+  
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="715341256617-1u3cpr3aq30q4tdonn17j8927ccj7tho.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  
+  <body>
+    <br>
+   
+
+<h2>Not a member?</h2>
+<p>Sign up here.</p>
+
+<div>
+    
+    <form class="form-horizontal" role="form" id="reg-form">
+        
+        <div class="form-group mt">
+            <div class="col-sm-10 col-sm-offset-2">
+            <div class="col-sm-3">
+                <label for="inputUsername" class="control-label" style = "color:black">Username</label>
+            </div>
+            <div class="col-sm-9">
+                <input type="text" class="form-control input-lg required" id="inputUsername" placeholder="@username">
+            </div>
+            </div>
+        </div>
+        <div class="form-group" >
+            <div class="col-sm-10 col-sm-offset-2">
+            <div class="col-sm-3">
+                <label for="inputPassword" class="control-label"style = "color:black">Password</label>
+            </div>
+            <div class="col-sm-9"  >
+                <input type="password" class="form-control input-lg required"  id="inputPassword"
+                       placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group" style = "padding-right:27px">
+            <div class="row col-sm-offset-6 col-sm-2 mt" >
+                <button type="submit" class="btn btn-warning btn-lg" >Create Account</button>
+            </div>
+        </div>
+            <script src="https://apis.google.com/js/platform.js" async defer></script><script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
+    </script>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '{2075984179321974}',
+      cookie     : true,
+      xfbml      : true,
+      version    : '{latest-api-version}'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+    </form>
+</div>
+
+
+
+
+  </body>
+</html>
+    </form>
+</div>
